@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythmic - Your Music World</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Rhythmic" class="logo"> Rhythmic
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="display-4 text-white">Best Music</h1>
+                <div class="list-group songItemContainer">
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div id="nowPlaying" class="card bg-dark text-white">
+                    <img src="covers/1.jpg" class="card-img-top" alt="Now Playing" id="nowPlayingCover">
+                    <div class="card-body">
+                        <h5 class="card-title" id="nowPlayingTitle">Song Title</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom bg-dark text-white py-3 mt-5">
+        <div class="container d-flex justify-content-between align-items-center">
+            <input type="range" id="myProgressBar" class="form-control-range" min="0" value="0" max="100">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-step-backward fa-2x mx-2" id="previous"></i>
+                <i class="far fa-play-circle fa-2x mx-2" id="masterPlay"></i>
+                <i class="fas fa-step-forward fa-2x mx-2" id="next"></i> 
+                <i class="fas fa-random fa-lg mx-2" id="shuffle"></i>
+                <i class="fas fa-redo fa-lg mx-2" id="repeat"></i>
+                <i class="fas fa-moon fa-lg mx-2" id="darkModeToggle"></i>
+            </div>
+            <div class="d-flex align-items-center">
+                <img src="playing.gif" width="42px" alt="Playing" id="gif"> 
+                <span id="masterSongName" class="mx-3">Warriyo - Mortals [NCS Release]</span>
+            </div>
+            <div>
+                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            </div>
+            <input type="range" id="volumeControl" class="form-control-range" min="0" max="100" value="50" step="1">
+        </div>
+    </div>
+
+    <div id="lyricsContainer" class="container text-white mt-3"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>

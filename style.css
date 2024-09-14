@@ -1,0 +1,67 @@
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.songItemContainer .songItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin: 12px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.songItemContainer .songItem:hover {
+    background-color: #f00;
+    color: #000;
+}
+
+.songItem img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 0;
+}
+
+.bottom input[type="range"] {
+    accent-color: #f00;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #f00;
+}
+
+#lyricsContainer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
